@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Black Goose Bistro | Pizza-on-Demand  </title>
+    </head>
+    <body>
+<h1> Black Goose Bistro | Pizza-on-Demand </h1>
+        
+<p> Our 12 " wood-fired pizzas are available for delivery.Build your custom pizza and wi'll delivery it within an hour." </p>
+
+<fieldset>
+ <legend> Your Information </legend>
+ 
+ <label for="">Name :</label>
+ <input type"text"name="" id ="">
+ <br><br>
+  <label for="">Addres :</label>
+ <input type"text"name="" id ="">
+ <br><br>
+  <label for="">Telephone Number :</label>
+ <input type""name="" id ="">
+ <br><br>
+  <label for="">Email :</label>
+ <input type"text"name="" id ="">
+</fieldset>
+
+ <label for="delins">Delivery Instruction : </label>
+ <br>
+ <textarea name="dellins" id"dellins" 
+ placeholder="No more than 400 characters long"
+    cols="50" 
+       rows="5"
+        maxlength="400"></textarea>
+ 
+ <h3> Design Your Dream Pizza </h3>
+ <p> Pizza Specs </p>
+<br>
+<p> Crust (Choose One) : </p>
+<input type="radio" name="option" id="classic"> 
+<label for="classic"> Classic White </label>
+<br>
+<input type="radio" name="option" id="M"> 
+<label for="classic"> Multigrain </label>
+<br>
+<input type="radio" name="option" id="cheese"> 
+<label for="classic"> Cheese-stufed crust </label>
+<br>
+<input type="radio" name="option" id="GF"> 
+<label for="classic"> Gluten-free </label>
+
+    <p> Toppings (Choose as many as you want): </p>
+ <input type="checkbox" name="Toppings 1" id="Toppings"> 
+<label for="Toppings"> Red sauce </label>
+<br>
+ <input type="checkbox" name="Toppings 2" id="Toppings"> 
+<label for="Toppings"> White Sauce </label>
+<br>
+ <input type="checkbox" name="Toppings 3" id="Toppings"> 
+<label for="Toppings"> Mozarella Cheese </label>
+<br>
+ <input type="checkbox" name="Toppings 4" id="Toppings"> 
+<label for="Toppings"> Pepperoni </label>
+<br>
+ <input type="checkbox" name="Toppings 5" id="Toppings"> 
+<label for="Toppings"> Mushrooms </label>
+<br>
+ <input type="checkbox" name="Toppings 6" id="Toppings"> 
+<label for="Toppings">  Peppers </label>
+<br>
+ <input type="checkbox" name="Toppings 7" id="Toppings"> 
+<label for="Toppings"> Anchovies </label>
+
+   <p> Number </p>
+ <label for="">How many pizzas : </label>
+   <select name="Pizza"id"Pizza"> 
+  <option value="1">1</option>
+    <option value="2">2</option>
+      <option value="3">3</option>
+        <option value="4">4</option>
+          <option value="5">5</option>
+            <option value="6">6</option>
+ </select>
+ 
+<br><br>
+<button type="submit">Bring me a pizza</button>
+<button type="reset">Reset</button>
+
+    </body>
+</html>
