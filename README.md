@@ -1,1 +1,0 @@
-# TI11_Wina-Nuraeni
