@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Checkout Cart</title>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav>
+            <a href="#" class="nav-brand"><i class="bi bi-asterisk"></i> Site Name</a>
+            <div class="navs">
+                <a href="#">Category 1</a>
+                <a href="#">Category 2</a>
+                <a href="#">Category 3</a>
+            </div>
+            <div class="navs navs-right">
+                <a href="#"><i class="bi bi-search"></i></a>
+                <a href="#"><i class="bi bi-cart2"></i> Cart (1)</a>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="container-grid">
+            <!-- Cart list -->
+            <main>
+                <h2 style="margin-bottom: 1rem;">Your Cart</h2>
+                <table class="cart-item-table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <!-- Cart Item -->
+                    <tbody>
+                        <tr>
+                            <td class="item">
+                                <img src="baju.png" alt="T-Shit V neck">
+                                <div class="desc">
+                                    <h4>T-Shirt V Neck</h4>
+                                    <small>Size : Large</small>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <b>Rp 10.000</b>
+                            </td>
+                            <td class="text-center">
+                                <select name="qty">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="text-right">
+                            <td colspan="3">
+                                Subtotal <b>Rp 10.000</b>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </main>
+            <!-- Total checkout price -->
+            <aside>
+                <h4>Summary (1 item)</h4>
+                <table class="total-table">
+                    <tbody>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>Rp 10.000</td>
+                        </tr>
+                        <tr>
+                            <td>Shopping</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Est. Taxes</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td>Rp 10.000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- Button chekcout -->
+                <div class="text-center">
+                    <a href="succes.html" class="btn">Checkout</a>
+                </div>
+            </aside>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <!-- foot nav -->
+            <div class="col-1">
+                <div class="foot-nav">
+                    <h4 style="margin-right: 20px;">Site Name</h4>
+                    <small class="navs">
+                        <a href="#">Category 1</a> |
+                        <a href="#">Category 2</a> |
+                        <a href="#">Category 3</a>
+                    </small>
+                </div>
+                
+                <div class="support">
+                    <i class="bi bi-phone-landscape-fill"></i>
+                    <i class="bi bi-aspect-ratio-fill"></i>
+                    <i class="bi bi-badge-cc-fill"></i>
+                </div>
+            </div>
+            <div class="form-subs">
+                <small>Stay In Touch Join our Newsletter</small>
+                <form action="">
+                    <input type="email" name="subs" id="subs">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </footer>
+        
+    </body>
+    </html>
