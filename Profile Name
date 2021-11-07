@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Profile Name </title>
+     <style>
+    
+    body{
+        background-color: beige;  }
+    h1{ 
+         color: gray;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head> 
+    <body> 
+    <img src="wallpaper-dinding-3d-kartun-50.jpg"
+    style="width:100px;height:100px;">
+    
+<h1> Profile Name </h1>
+  <p> 245 Blackfriars Road </p>
+    <p> Ludgate House </p>
+      <p> London,SE1 9UY </p>
+        <p style="font-size:13px;color: blue"> Email : Winanuraeni002@gmail.com </p> 
+           <p> Telephone : 0207 955 3705 </p>
+        <br /> <br /> 
+    <p style="font-size:14px;color: gray"> 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lactus. Prassent interdum sapien in nisl tempor vestibulum. Mauris nec mauris sapien. Nam laoreet nisl non magna laculis vitce convallis lorem porttiter.
+ 
+                <br />  <br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum Facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lectus. Praesent interdum saplen in nisl tempor vestibulum. Mauris nec mauris  </p> 
+
+              <br /> <br /> <br />
+        
+    <video width="320" height"240"controls>
+       <source src="Perkenalan.mp4" type="video/mp4">
+         <source src="Perkenalan.ogg" type="video/ogg">
+            </video> 
+  <p>click on the play button to play a sound:</p>      
+    <audio controls>
+       <source src="Tenang.ogg" type="audio/ogg">
+         <source src="Tenang.mp3" type="audio/mpeg">
+         
+    </audio> 
+     
+    
+    </body>
+</html>
