@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        .container-flex {
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-grow: 1;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .container-flex.dir-column {
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            width: 100%;
+            height: 5em;
+            background-color: #ECD4FF;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        article {
+            width: 80%;
+            height: 28em;
+            background-color: #A9A9A9;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            order: 1;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        article .container-flex {
+            gap: 0;
+        }
+
+        article img {
+            width: 100px;
+        }
+
+        aside {
+            width: 20%;
+            height: 28em;
+            background-color: #DDA0DD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-flex dir-column">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <div class="container-flex">
+            <article>
+                <div class="container-flex dir-column">
+                    <h1>Article</h1>
+                    <div class="img">
+                        <img src="img/bunga1.jpg" alt="img">
+                        <img src="img/orang3.jpg" alt="img">
+                        <img src="img/bunga2.jpg" alt="img">
+                    </div>
+                </div>
+            </article>
+            <aside>
+                <h1>Aside</h1>
+            </aside>
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+
+</html>
