@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> LUAS DAN KELILING LINGKARAN </title>
+</head>
+
+  <body>
+      <input type="number" placeholder="Masukan Nilai Jari-Jari Lingkaran (cm)" id="jari">
+      <button onclick="lingkaran()">Hitung Keliling Lingkaran</button>
+Hasil : <span id="hasil"></span>
+<br>
+<br>
+      <input type="number" placeholder="Masukan Nilai Jari-Jari Lingkaran (cm)" id="luas">
+      <button onclick="lingkaran()">Hitung Luas Lingkaran</button>
+Hasil : <span id="hasilluas"></span>
+<script>
+    function lingkaran() {
+        
+
+        document.getElementById("hasil").innerHTML=3.14*2*parseFloat(jari.value);
+        document.getElementById("hasilluas").innerHTML=3.14*2*parseFloat(Math.pow(luas.value,2));
+
+    }
+</script>
+  </body>
+</html>
