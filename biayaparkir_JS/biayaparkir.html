@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Parking</title>
+        <script>
+            function hitungParkir(){
+                let jam_masuk = document.getElementById("masuk").value;
+                let jam_keluar = document.getElementById("keluar").value;
+                let selisih = jam_keluar - jam_masuk;
+                let biaya = 0;
+                const biayaAwal = 3000;
+                const biayaPerjam = 1000;
+                if (selisih <=2) {
+                    biayaAwal;
+                }
+                else {
+                    let tambahanJam = selisih - 2;
+                    biaya = biayaAwal + (biayaPerjam * tambahanJam);
+                }
+                let tarif = document.getElementById("biaya");
+                tarif.innerHTML = "= Rp. " + biaya;
+            }
+        </script>
+</head>
+<body>
+    <h3 style="font-family: sans-serif;">Hitung Biaya Parkir</h3>
+    <br>
+    <br>
+    <p>Masukkan Jam Parkir</p>
+    Parkir Masuk = <input type="" value="" size="15" id="masuk">
+    <br>
+    Parkir keluar = <input type="" value="" size="15" id="keluar">
+    <br>
+    <button onclick="hitungParkir()">Biaya Parkir </button>
+    <span id="biaya"></span>
+</body>
+</html>
+
