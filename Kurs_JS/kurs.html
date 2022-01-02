@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Menghitung Kurs Rupiah </title>
+    </head>
+    <body>
+        <h1>
+            Menghitung Kurs Mata Uang
+        </h1>
+    <div>USD</div>
+    <input id="usd" type="number"/>
+                          <hr>
+    <div>IDR</div>
+    <input id="idr" type="number"/>
+<script src="script.js"></script>
+    </body>
+   <script>const factor = 14000;
+
+const usd = document.getElementById("usd")
+const idr = document.getElementById("idr")
+
+usd.addEventListener("input", function(ev) {
+    const value = ev.currentTarget.value;
+    const valueIDR = value * factor ;
+    idr.value = valueIDR;
+})
+
+idr.addEventListener("input", function(ev){
+    const.value =ev.currentTarget.value;
+    const valueUSD = value/factor;
+    usd.value = valueUSD;
+})
+   </script>
+</html>
