@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo.jpeg"type="png"sizes="16x16">
+
+    <style>
+        h1{font-size:22px}
+body{
+    background:white;
+    color:black;
+    font-family:'Arial';
+}
+#box{
+    position:fixed;
+    left:40%;
+    border-radius:8px;
+    background: white;
+    width:300px;
+    margin:15px auto;
+    padding:20px 40px;
+    display:block;
+    border:1px solid #ddd;
+    box-shadow:2px 2px 20px #ddd}
+body input{
+    padding:10px;
+    border-radius:5px;
+    margin:10px 0;
+    width:100%;
+    border:1px solid #ddd}
+body input:focus{border-color:blue;outline:none}
+body button{background: black;
+    color:#fff;
+    border:none;
+    font-weight:bold;
+    border-radius:5px;
+    padding:10px}
+
+    </style>
+</head>
+<body>
+    <div id='box'>
+        <h1>Login</h1>
+        <form action='#login'>
+        <input id='username' type='text' placeholder='Username'/><br/>
+        <input id='password' type='password' placeholder='Password'/><br/>
+        <button action='submit' onclick='startlog()'>SignIn</button>
+        <p id='akses'></p>
+        <a href="user_regis.html">Registrasi User</a>
+        </form>
+        </div>
+
+        <script>
+          function startlog(){
+var net1 = document.getElementById('username').value + document.getElementById('password').value;
+var net2 = ('codingloop@gmail.com') + ('123');
+if (net1 == net2) {
+var logakses = document.getElementById('akses').innerHTML = 'Selamat Datang di Aplikasi SIPAK';
+}
+else {
+var logakses = document.getElementById('akses').innerHTML = 'Masukkan Email dan Password dengan Benar!!!';
+}
+};
+      </script>
+
+
+      
+</body>
+
+
+
+
+</html>
