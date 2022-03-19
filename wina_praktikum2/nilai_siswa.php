@@ -14,7 +14,7 @@
 </center>
             <hr>
     <div class="container">
-        <form method="GET" action="form_nilai.php">
+        <form class="form-horizontal mt-3" method="POST" action="nilai_siswa.php">
             <div class="form-group row">
                 <label for="nama_lengkap" class="col-4 col-form-label">Nama Lengkap</label> 
                 <div class="col-8">
@@ -55,22 +55,51 @@
                 </div>
             </div>
         </form>
+        <br>
+        <?php
+       
+        if (isset($_POST['proses'])) {
+            $nama = $_POST['nama_lengkap'];
+            $mata_kuliah = $_POST['mata_kuliah'];
+            $nilai_uts = $_POST['nilai_uts'];
+            $nilai_uas = $_POST['nilai_uas'];
+            $nilai_tugas = $_POST['nilai_tugas'];
 
-    <?php
-    $proses = $_GET['proses'];
-    $nama_siswa = $_GET['nama'];
-    $mata_kuliah = $_GET['matkul'];
-    $nilai_uts = $_GET['nilai_uts'];
-    $nilai_uas = $_GET['nilai_uas'];
-    $nilai_tugas = $_GET['nilai_tugas'];
+            $persentase_uts = 0.3 * $nilai_uts;
+            $persentase_uts = (30 * $nilai_uts) / 100;
+            $nilai_total = $persentase_uts;
 
-       echo 'Proses : '.$proses;
-       echo '<br/>Nama : '.$nama_siswa;
-       echo '<br/>Mata Kuliah : '.$mata_kuliah;
-       echo '<br/>Nilai UTS : '.$nilai_uts;
-       echo '<br/>Nilai UAS : '.$nilai_uas;
-       echo '<br/>Nilai Tugas Praktikum : '.$nilai_tugas;
-    ?>
-        </body>
+            echo 'Nama : ' . $nama;
+            echo '<br />Mata Kuliah : ' . $mata_kuliah;
+            echo '<br />Nilai UTS : ' . $nilai_uts;
+            echo '<br />Nilai UAS : ' . $nilai_uas;
+            echo '<br />Nilai Tugas : ' . $nilai_tugas;
+            echo '<br />Nilai Total : ' . $nilai_total;
+
+            $grade_uts = '';
+            if ($nilai_uts >= 55) {
+                $grade_uts = 'A';
+                echo "<br />Nilai UTS anda baik";
+            } else {
+                $grade_uts = 'C';
+                echo "<br />Nilai UTS anda perlu diperbaiki";
+            }
+
+            echo "<br />Grade Nilai UTS anda : " . $grade_uts;
+
+            switch ($grade_uts) {
+                case 'A':
+                    echo '<br />Predikat nilai : Sangat Memuaskan';
+                    break;
+              
+                default:
+                    echo '<br />Predikat nilai : Nilai Kurang Memuaskan';
+                    break;
+            }
+        } else {
+            echo 'Isi form lalu submit terlebih dahulu';
+        }
+        ?>
+    </div>
+</body>
 </html>
-
