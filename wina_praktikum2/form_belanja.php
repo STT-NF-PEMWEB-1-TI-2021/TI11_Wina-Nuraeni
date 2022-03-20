@@ -81,13 +81,10 @@
     {
         if ($_produk == 'TV' && $_jml > 0) {
             echo 'Total harga: Rp. '. number_format($_harga_tv * $_jumlah, 0, ',', '.'). '<br>';
-            // echo 'Total Harga: ' . 'Rp. ' . $_harga_tv * $_jumlah . '<br>';
         } else if ($_produk == 'KULKAS' && $_jml > 0) {
             echo 'Total harga: Rp. '. number_format($_harga_kulkas * $_jml, 0, ',', '.'). '<br>';
-            // echo 'Total Harga: ' . 'Rp. ' . $_harga_kulkas * $_jumlah . '<br>';
         } else if ($_produk == 'MESIN CUCI' && $_jml > 0) {
             echo 'Total harga: Rp. '. number_format($_harga_mesin_cuci * $_jml, 0, ',', '.'). '<br>';
-            //echo 'Total Harga: '. 'Rp. ' .$_harga_mesin_cuci * $_jumlah.'<br>';
         }
     }
 
